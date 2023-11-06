@@ -186,6 +186,13 @@ li {
       }
     }
   }
+  .country-card-container{
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  .country-card:hover {
+    transform: scale(1.03);
+  }
 }
 
 @media only screen and (max-width: 576px) {

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/counttry-details.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <title>Details Page</title>
+  </head>
+  <body>
+    <header class="container header-container">
+      <h1>Where in the world?</h1>
+      <div class="header-theme-changer">
+        <ion-icon class="theme-changer-icon" name="moon-outline"></ion-icon>
+        <span>Dark mode</span>
+      </div>
+    </header>
+
+    <section class="container navigate-section-container">
+      <button>
+        <ion-icon name="arrow-back"></ion-icon>
+        <a href="" class="link-back"> Back </a>
+      </button>
+    </section>
+
+    <main class="container country-detail-container">
+      <div class="country-img-container">
+        <img src="https://flagcdn.com/be.svg" alt="flag" />
+      </div>
+      <div class="country-detail-content">
+        <h2>Belgium</h2>
+
+        <div class="country-detailed-info">
+          <p>Native Name: <span>België</span></p>
+          <p>Population: <span>11,319,511</span></p>
+          <p>Region: <span>Europe</span></p>
+          <p>Sub Region: <span>Western Europe</span></p>
+          <p>Capital: <span>Brussels</span></p>
+          <p>Top Level Domain: <span>.be</span></p>
+          <p>Currencies: <span>Euro</span></p>
+          <p>Languages: <span>Dutch, French, German</span></p>
+        </div>
+
+        <div class="border-countries-container">
+          <p>Border Countries:</p>
+          <div class="border-countries-btns">
+            <button>Germany</button>
+            <button>France</button>
+            <button>Netherlands</button>
+            <button>France</button>
+            <button>Netherlands</button>
+            <button>Germany</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
