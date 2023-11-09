@@ -10,6 +10,7 @@ let detailCapital = document.querySelector(".detail-capital");
 let detailDomain = document.querySelector(".detail-domain");
 let detailcurrent = document.querySelector(".detail-current");
 let detailLang = document.querySelector(".detail-lang");
+let body = document.querySelector(".body")
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}`)
   .then((res) => res.json())
@@ -28,3 +29,13 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}`)
       }
     });
   });
+
+
+  let local = localStorage.getItem("theme")
+  console.log(local)
+  
+  if (local==='true') {
+    body.classList.add("dark-mode")
+  }else{
+    body.classList.remove("dark-mode")
+  }
